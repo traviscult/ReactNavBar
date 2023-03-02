@@ -21,7 +21,7 @@ class Navbar extends Component {
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
           ></i>
         </div>
-        <ul className={this.state.clicked ? "nav-menu acive" : "nav-menu"}>
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {menuItems.map((item, index) => {
             return (
               <li key={index}>
