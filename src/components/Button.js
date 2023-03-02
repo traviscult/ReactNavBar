@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import "./Buttons.css";
 
 const STYLES = ["btn--primary", "btn--outline"];
 
@@ -12,11 +12,11 @@ export const Button = ({
   buttonStyle,
   buttonSize,
 }) => {
-  const checkButtonStyle = Styles.includes(buttonstyle)
+  const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
-  const checkButtonSize = SIZES.includes(buttonsize) ? buttonSize : SIZES[0];
-  retunr(
+  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+  return (
     <button
       className={`btn ${checkButtonStyle} ${checkButtonSize}`}
       onClick={onClick}

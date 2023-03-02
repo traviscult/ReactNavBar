@@ -18,7 +18,7 @@
   transform: 250ms;
 }
 
-.btn-primary {
+.btn--primary {
   background-color: var(--primary);
 }
 
